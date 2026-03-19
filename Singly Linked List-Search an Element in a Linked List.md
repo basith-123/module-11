@@ -1,68 +1,33 @@
-# 📝 Singly Linked List: Add Element at the Start
+# # 🔍 Singly Linked List-To Search an Element in a Linked List
 
-This Python program demonstrates the implementation of a **Singly Linked List** where a new element can be added at the **start** of the list.
+This project contains a simple implementation of a **singly linked list** in Python, allowing insertion and searching of elements.
 
 ---
 
 ## 🎯 Aim
 
-To write a Python program that adds a **new element** at the **start** of a singly linked list. The program implements a `push_front` method that inserts an element at the front of the list, followed by a method to print the list.
+To write a Python program to search for a given element in a singly linked list using object-oriented programming principles.
 
 ---
 
 ## 🧠 Algorithm
 
-1. **Step 1:** Define a class `Node` with:
-   - `data` to store the node's value.
-   - `next` to store the reference to the next node.
-   
-2. **Step 2:** Define a class `LinkedList` with:
-   - `head` to point to the first node.
-   
-3. **Step 3:** In the `LinkedList` class, define a method `push_front(newElement)`:
-   - Create a new node with `newElement`.
-   - Set the new node's next pointer to the current head node.
-   - Set the head to the new node.
-
-4. **Step 4:** Define a method `PrintList()` to display the list:
-   - Print the elements of the list or display "The list is empty." if the list is empty.
-
-5. **Step 5:** Instantiate a `LinkedList` object, `MyList`, and add elements at the start using the `push_front()` method.
-
-6. **Step 6:** Call the `PrintList()` method to display the list.
+1. **Define a Node class** with `data` and `next` attributes.
+2. **Define a LinkedList class** with:
+   - A `head` pointer initialized to `None`.
+   - A `push()` method to add elements at the beginning.
+   - A `search()` method to check whether a given value exists.
+3. Create a `LinkedList` instance.
+4. Insert the elements **10, 30, 11, 21, 14** using `push()` (which results in reverse order).
+5. Read an integer input from the user.
+6. Use `search()` to check if the element exists in the list.
+7. Output **"Yes"** if found, else **"No"**.
 
 ---
 
-## Program
-```
-def init (self, data): 
-   self.data = data 
-   self.next = None
-class LinkedList:
-   def init (self):
-      self.head = None
-   def push_front(self, newElement): 
-      new_node = Node(newElement) 
-      new_node.next = self.head 
-      self.head = new_node
-   def PrintList(self):
-      temp = self.head 
-      if(temp != None):
-         print("The list contains:", end=" ") 
-      while (temp != None): 
-         print(temp.data, end=" ")
-         temp = temp.next 
-      print()
-      else:
-         print("The list is empty.")
-MyList = LinkedList()
-MyList.push_front(10) 
-MyList.push_front(20) 
-MyList.push_front(30) 
-MyList.PrintList()
-```
+## 💻 Program
+Add Code Here
 ## Sample Output
-![image](https://github.com/user-attachments/assets/99bb3fbc-1a1a-4fe5-aff7-144cd4ea8bc4)
 
 ## Result
-Thus the program has been successfully executed
+
